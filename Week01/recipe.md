@@ -1,5 +1,5 @@
 # Recipe for Cinnamon Rolls
-![Cinnamon Rolls](cinnamon-rolls.jpg)
+![Cinnamon Rolls](/Week01/cinnamon-rolls.jpg)
 Cinnamon rolls are a beloved classic pastry. We will be using prepared bread dough to make these easy and simple treats.
 ## Ingredients
 - 1 (1 pound) loaf frozen bread dough, thawed
