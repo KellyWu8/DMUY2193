@@ -8,25 +8,36 @@
       name="description"
       content="Homework 2: Mark up your recipe in HTML semantically based on your wireframe."
     />
+    <style>
+      h1, h2, h3 {
+        font-family: Helvetica, sans-serif;
+      }
+      .text {
+        font-family: Helvetica, sans-serif;
+      }
+      body {
+        background-color: #d0e0e3ff;
+      }
+    </style>
   </head>
 
   <body>
     <header>
       <h1>Brand Name</h1>
       <nav> 
-          <a href="#">More Recipes</a> |
-          <a href="#">About</a> |
-          <a href="#">Contact</a>
+          <a class="text" href="#">More Recipes</a> |
+          <a class="text" href="#">About</a> |
+          <a class="text" href="#">Contact</a>
       </nav>
     </header>
 
     <h2>More Pastries</h2>
     <nav> 
-        <a href="#">Pies</a> |
-        <a href="#">Tarts</a> |
-        <a href="#">Donuts</a> |
-        <a href="#">Croissants</a> |
-        <a href="#">Scones</a>
+        <a class="text" href="#">Pies</a> |
+        <a class="text" href="#">Tarts</a> |
+        <a class="text" href="#">Donuts</a> |
+        <a class="text" href="#">Croissants</a> |
+        <a class="text" href="#">Scones</a>
     </nav>
 
     <img src="https://placehold.co/500x400" class="finished_recipe" />
@@ -35,22 +46,22 @@
         <h2>Ingredients</h2>
       <nav>
         <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-          <li><a href="#">Item 5</a></li>
-          <li><a href="#">Item 5</a></li>
-          <li><a href="#">Item 7</a></li>
+          <li class="text">Item 1</li>
+          <li class="text">Item 2</li>
+          <li class="text">Item 3</li>
+          <li class="text">Item 4</li>
+          <li class="text">Item 5</li>
+          <li class="text">Item 5</li>
+          <li class="text">Item 7</li>
         </ul>
       </nav>
     </aside>
     
     <body>
         <h1>Recipe Title</h1>
-        <p>Recipe Description: Lorem ipsum dolor sit amet, consectetur 
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        <p class="text">Recipe Description: Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
             exercitation ullamco laboris nisi ut aliquip ex ea commodo 
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
              esse cillum dolore eu fugiat nulla pariatur. 
@@ -58,19 +69,19 @@
         
         <h2>Instructions:</h2>
         <ol>
-            <li>Step 1</li>
-            <li>Step 2</li>
-            <li>Step 3</li>
-            <li>Step 4</li>
-            <li>Step 5</li>
-            <li>Step 6</li>
-            <li>Step 7</li>
+            <li class="text">Step 1</li>
+            <li class="text">Step 2</li>
+            <li class="text">Step 3</li>
+            <li class="text">Step 4</li>
+            <li class="text">Step 5</li>
+            <li class="text">Step 6</li>
+            <li class="text">Step 7</li>
         </ol>
     </body>
 
     <footer>
       © Brand Name 2023 <a href="#" target="_blank">Facebook</a> 
-      <a href="#">Twitter</a>
+      <a href="#" target="_blank">Twitter</a>
     </footer>
   </body>
 </html>
