@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layout 2</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      /* transparent blue BG and min height so we can keep track 
+      of out divs and semantic markup eleemt without having to add context */
+      /* tag selectors */
+      div, 
+      header, 
+      footer, 
+      section, 
+      aside, 
+      article, 
+      main {
+        min-height: 100px;
+        /* RGBA red green blue alpha 0-1 */
+        background-color: rgba(0,100,255,0.2);
+      }
+
+      main {
+        width: 960px;
+        margin: 0 auto;
+      }
+
+      /* reusable class that adds a blcok of empty content with zero height that will clear out both sides
+      to avoid our wrapper issues. Use this class on the container/wrapper elements */
+      .clearfix::after {
+        display: block;
+        clear: both;
+        /* to ensure cross browser compatability */
+        height: 0;
+        font-size: 0;
+        content: '';
+        /* one last fallback */
+        visibility: hidden;
+      }
+
+      /* descendant selector for more specificity */
+      article.col-pixels section {
+        /* 960px - 6x10px margins / 3 */
+        width: 300px;
+        margin: 0 10px;
+        float: left;
+      }
+
+      article.col-fluid section {
+        width: 20%;
+        margin: 2.5%;
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In this example header and footer are not included with our wrapper -->
+    <header>
+      A header eleemt with width 100%. We will cover menus in the next example!
+    </header>
+
+    <main>
+        <h1>Article 1: Pixel based</h1>
+        <article class="col-pixels clearfix">
+          <h3>Article with 3 clearfixvertical sections/columns</h3>
+          <section><h3>Section 1</h3></section>
+          <section><h3>Section 2</h3></section>
+          <section><h3>Section 3</h3></section>
+        </article>
+    </main>
+
+    <h1>Article 2: Percent based</h1>
+    <!-- fluid layout using % -->
+    <article class="col-fluid clearfix">
+      <h3>Article with 4 vertical sections/columns</h3>
+      <p>
+        note that this article is outside of our main element - which has a set 
+        of pixel width
+      </p>
+      <!-- start stacking our sections after our headings and paragraphs that display bloack aka 100% by default -->
+      <section><h3>Section 1</h3></section>
+      <section><h3>Section 2</h3></section>
+      <section><h3>Section 3</h3></section>
+      <section><h3>Section 4</h3></section>
+
+      <section><h3>Section 1</h3></section>
+      <section><h3>Section 2</h3></section>
+      <section><h3>Section 3</h3></section>
+      <section><h3>Section 4</h3></section>
+    </article>
+
+    <footer>some footer text</footer>
+  </body>
+</html>
