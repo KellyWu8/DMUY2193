@@ -1,6 +1,7 @@
 # Recipe for Cinnamon Rolls
 ![Cinnamon Rolls](cinnamon-rolls.JPG)
-Cinnamon rolls are a beloved classic pastry. We will be using prepared bread dough to make these easy and simple treats.
+Cinnamon rolls are a beloved classic pastry. They are a sweet baked dough filled with a cinnamon-sugar filling.
+We will be using prepared bread dough to make these easy and simple treats.
 ## Ingredients
 - 1 (1 pound) loaf frozen bread dough, thawed
 - 3 tablespoons butter, melted
@@ -22,3 +23,7 @@ Cinnamon rolls are a beloved classic pastry. We will be using prepared bread dou
 6. Preheat oven to 350 degrees F (175 degrees C). Pour heavy cream over dough.
 7. Bake in preheated oven until golden brown, about 25 minutes.
 8. Mix confectioners' sugar, milk, and vanilla extract in a small bowl; drizzle over warm cinnamon rolls to serve.
+
+---
+
+**Source:** https://www.allrecipes.com/recipe/229276/easy-cinnamon-rolls/
