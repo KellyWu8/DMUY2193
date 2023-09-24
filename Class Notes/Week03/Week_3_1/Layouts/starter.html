@@ -8,53 +8,54 @@
       body {
         margin: 0;
       }
-        /* transparent blue BG and min height so we can keep track 
+      /* transparent blue BG and min height so we can keep track 
         of out divs and semantic markup eleemt without having to add context */
-        /* tag selectors */
-        div, 
-        header, 
-        footer, 
-        section, 
-        aside, 
-        article, 
-        main {
-          min-height: 100px;
-          /* RGBA red green blue alpha 0-1 */
-          background-color: rgba(0,100,255,0.2);
-        }
-        
-        div.wrapper {
-          width: 900px;
-          /* use margin 0 auto to center out wrapper div within our browser window */
-          margin: 0 auto;
-          /* margin-top: 1rem; */
-          /* add a little bit of padding so we can see how child elemnets stack more clearly */
-          padding: 30px;
-          /* shorthand for border dimension, style, color */
-          border: 2px solid red;
-        }
+      /* tag selectors */
+      div,
+      header,
+      footer,
+      section,
+      aside,
+      article,
+      main {
+        min-height: 100px;
+        /* RGBA red green blue alpha 0-1 */
+        background-color: rgba(0, 100, 255, 0.2);
+      }
 
-        article {
-          width: 600px;
-          float: left;
-        }
+      div.wrapper {
+        width: 900px;
+        /* use margin 0 auto to center out wrapper div within our browser window */
+        margin: 0 auto;
+        /* margin-top: 1rem; */
+        /* add a little bit of padding so we can see how child elemnets stack more clearly */
+        padding: 30px;
+        /* shorthand for border dimension, style, color */
+        border: 2px solid red;
+      }
 
-        aside {
-          width: 300px;
-          float: left;
-          height: 400px;
-          background-color: rgba(255, 0, 0, 0.1);
-        }
+      article {
+        width: 600px;
+        float: left;
+      }
 
-        .clearfix {
-          height: 0;
-          clear: both;
-        }
+      aside {
+        width: 300px;
+        float: left;
+        height: 400px;
+        background-color: rgba(255, 0, 0, 0.1);
+      }
+
+      .clearfix {
+        height: 0;
+        clear: both;
+      }
     </style>
   </head>
   <body>
     <div class="wrapper">
-      <header>A header eleemt with width of 100%. We will cover menu layouts in 
+      <header>
+        A header eleemt with width of 100%. We will cover menu layouts in
         another example!
       </header>
       <main>
