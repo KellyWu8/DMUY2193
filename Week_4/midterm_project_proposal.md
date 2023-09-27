@@ -8,15 +8,15 @@
     As well as lots of photos of the food there! ☜(ﾟヮﾟ☜)
 
 ## Site Map
-![](site_map.png)
+![](images/site_map.png)
 
 ## Wireframes
 ### Highlights
-![](highlights_wireframe.png)
+![](images/highlights_wireframe.png)
 ### Review
-![](review_wireframe.png)
+![](images/review_wireframe.png)
 ### Gallery
-![](gallery_wireframe.png)
+![](images/gallery_wireframe.png)
 
 ## Inspiration
 https://thefrugalfoodies.com/a-day-at-japan-fes/
