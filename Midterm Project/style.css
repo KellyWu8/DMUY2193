@@ -159,9 +159,9 @@ h2 {
 
 /* Mobile Screen Sizes */
 @media only screen and (max-width: 767px) {
-  body {
+  /* body {
     background-color: aquamarine;
-  }
+  } */
 
   .navbar {
     flex-wrap: wrap;
@@ -249,9 +249,9 @@ h2 {
 
 /* Tablet Screen Sizes */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  body {
+  /* body {
     background-color: salmon;
-  }
+  } */
 
   h2 {
     font-size: 30px;
@@ -314,9 +314,9 @@ h2 {
 
 /* Large screens */
 @media only screen and (min-width: 1824px) {
-  body {
+  /* body {
     background-color: rgb(220, 147, 249);
-  }
+  } */
 
   .navbar {
     height: 11em;
