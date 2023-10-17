@@ -51,8 +51,8 @@ This is a snippet of code of getting the star icon in my review page. I found a 
 ## Next Steps
 If I had more time or maybe in the future, I think it would be cool to have this interactive feature in the gallery page of when you click on a photo, it will pop up at you -- similar to what we did with modals in class.
 
-![](modal.GIF)
+![](images/modal.gif)
 
 Also, maybe have some kind of user-generated content -- allowing other users to leave comments in the website.
 
-![](comments.jpg)
+![](images/comments.jpg)
