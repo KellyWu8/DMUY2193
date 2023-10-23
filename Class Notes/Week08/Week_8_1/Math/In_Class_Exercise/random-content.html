@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Content using an array</title>
+    <script type="text/javascript">
+        var arrImg = [
+        "https://www.peta.org/wp-content/uploads/2016/02/Goats-maximili.jpg",
+        "https://cdn.mos.cms.futurecdn.net/BX7vjSt8KMtcBHyisvcSPK.jpg",
+        "https://www.boredpanda.com/blog/wp-content/uploads/2021/11/6188f4805c24d_kcm73mko3m631__700.jpg"
+        ]
+
+        var arrLink = [
+        "https://en.wikipedia.org/wiki/Goat",
+        "https://en.wikipedia.org/wiki/Chicken",
+        "https://en.wikipedia.org/wiki/Cow"
+        ]
+
+        // random helper function
+        // Math.random() returns a random floating point number between 0 and 1
+        // Math.round(num) returns the rounded up or down value passed in as the parameter
+        function randNum(max) {
+            var rn = Math.floor(max * Math.random())
+            return rn
+        }
+
+        function loadRandomImage() {
+            var index = randNum(arrImg.length)
+            var img = document.getElementById('dyn-img')
+            var link = document.getElementById('dyn-link')
+            img.src = arrImg[index]
+            link.href = arrLink[index]
+        }
+
+        document.addEventListener("DOMContentLoaded", loadRandomImage)
+    </script>
+</head>
+<body>
+    <a href="#" target="_blank" id="dyn-link">
+        <img scr="" id="dyn-img" />
+    </a>
+</body>
+</html>
+
