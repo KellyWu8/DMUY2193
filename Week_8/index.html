@@ -10,6 +10,25 @@
         visibility: hidden;
       }
     </style>
+    <script type="text/javascript">
+      let num;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("roll_button").addEventListener("click", roll);
+      });
+
+      function roll() {
+        num = Math.floor(Math.random() * 6) + 1; // Get number 1-6
+        document.getElementById("p_text").textContent =
+          "You rolled a " + num + ".";
+        if (num % 2 == 0) {
+          // Roll an even number, get a chicken
+          document.getElementById("chicken_img").style.visibility = "visible";
+        } else {
+          document.getElementById("chicken_img").style.visibility = "hidden";
+        }
+      }
+    </script>
   </head>
   <body>
     <h1>Roll an even, get a chicken!</h1>
@@ -19,19 +38,5 @@
       src="https://cdn.britannica.com/18/137318-050-29F7072E/rooster-Rhode-Island-Red-roosters-chicken-domestication.jpg"
       id="chicken_img"
     />
-
-    <script type="text/javascript">
-      let num;
-
-      roll_button.onclick = function () {
-        num = Math.floor(Math.random() * 6) + 1; // Get number 1-6
-        document.getElementById("p_text").textContent = "You rolled a " + num + ".";
-        if (num % 2 == 0) { // Roll an even number, get a chicken
-           document.getElementById("chicken_img").style.visibility = "visible";
-        } else {
-            document.getElementById("chicken_img").style.visibility = "hidden";
-        }
-      };
-    </script>
   </body>
 </html>
