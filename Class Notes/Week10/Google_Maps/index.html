@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loading Google Maps</title>
+    <style>
+      #myMap {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script>
+      ((g) => {
+        var h,
+          a,
+          k,
+          p = "The Google Maps JavaScript API",
+          c = "google",
+          l = "importLibrary",
+          q = "__ib__",
+          m = document,
+          b = window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}),
+          r = new Set(),
+          e = new URLSearchParams(),
+          u = () =>
+            h ||
+            (h = new Promise(async (f, n) => {
+              await (a = m.createElement("script"));
+              e.set("libraries", [...r] + "");
+              for (k in g)
+                e.set(
+                  k.replace(/[A-Z]/g, (t) => "_" + t[0].toLowerCase()),
+                  g[k]
+                );
+              e.set("callback", c + ".maps." + q);
+              a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+              d[q] = f;
+              a.onerror = () => (h = n(Error(p + " could not load.")));
+              a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+              m.head.append(a);
+            }));
+        d[l]
+          ? console.warn(p + " only loads once. Ignoring:", g)
+          : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)));
+      })({
+        key: "AIzaSyAuxZP0Ie3MYVSuxytxscWGhbyZmvTDZy0",
+        v: "weekly",
+        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+        // Add other bootstrap parameters as needed, using camel case.
+      });
+    </script>
+    <script>
+      // declare our map as a global variable
+      let map;
+
+      // THIS IS THE SIMPLIEST EXAMPLE IN GOOGLE MAPS API, JAVASCRIPT TUTORIALS
+      // async function initMap() {
+      //   const { Map } = await google.maps.importLibrary("maps");
+
+      //   // assign a new Map object to the global variable map
+      //   // new Map() takes 2 arguments:
+      //   // 1- The element on our page we want to append the map to
+      //   // 2- An object filled with all of our parameters to build our map
+      //   map = new Map(document.getElementById("myMap"), {
+      //     center: { lat: -34.397, lng: 150.644 },
+      //     zoom: 8,
+      //   });
+      // }
+
+      // initMap();
+
+      async function initMap() {
+        // The location of NYU
+        const position = { lat: 40.6933203, lng: -73.9879398 };
+        // Request needed libraries.
+        //@ts-ignore
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary(
+          "marker"
+        );
+
+        // The map, centered at NYU
+        map = new Map(document.getElementById("myMap"), {
+          zoom: 19,
+          center: position,
+          mapId: "d4f7f0a663ae0f55",
+        });
+
+        // The marker, positioned at NYU
+        const marker = new AdvancedMarkerElement({
+          // which map in our code to appened the marker to
+          map: map,
+          position: position,
+          title: "NYU Room 309",
+        });
+      }
+
+      initMap();
+    </script>
+  </head>
+  <body>
+    <!-- 
+      Latitude: 40.6933203
+      Longitude: -73.9879398
+    -->
+    <div id="myMap"></div>
+  </body>
+</html>
