@@ -19,4 +19,5 @@ https://www.16personalities.com/
 - Use Javascript to calculate the score result
 - Find articles and research papers for the Resources page
 - Add automatic graph feature
+
 ![](images/graph.png)
