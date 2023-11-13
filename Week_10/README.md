@@ -18,6 +18,6 @@ https://www.16personalities.com/
 - Use Javascript to track of the points for each user's response
 - Use Javascript to calculate the score result
 - Find articles and research papers for the Resources page
-- Add automatic graph feature
+- Add automatic graph feature (radar chart)
 
 ![](images/graph.png)
