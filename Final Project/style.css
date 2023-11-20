@@ -1,0 +1,39 @@
+* {
+  font-family: "Poppins", Arial;
+}
+.home_header {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about p {
+  padding-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  width: 900px;
+}
+
+.test_header {
+  height: 50vh;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: rgb(178, 234, 164);
+  color: black;
+}
+
+.traits li {
+  padding: 8px;
+}
+
+.traits p {
+  padding-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  width: 800px;
+}
