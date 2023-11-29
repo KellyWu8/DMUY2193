@@ -12,24 +12,21 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Final Project</title>
+    <title>5Traits</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body class="p-0 m-0 border-0">
     <!-- Navbar -->
     <div
-      class="navbar navbar-expand-lg bg-light fixed-top"
+      class="navbar navbar-expand-lg bg-light fixed-top py-3"
       data-bs-theme="light"
-      style="height: 70px"
     >
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand" style="font-weight: 500"
+        <a
+          href="index.html"
+          class="navbar-brand"
+          style="font-weight: 500; padding-left: 24px"
           >5Traits</a
         >
         <button
@@ -82,8 +79,12 @@
                 Resources
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Articles</a></li>
-                <li><a class="dropdown-item" href="#">Research</a></li>
+                <li>
+                  <a class="dropdown-item" href="articles.html">Articles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="research.html">Research</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -92,18 +93,3238 @@
     </div>
 
     <!-- Test Header -->
-    <header class="test_header">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-12 text-center">
-            <h1>Personality Test</h1>
-            <p class="lead">
-              Complete the Test. View Results. Uncover Your Unique Blueprint.
-            </p>
-          </div>
+    <header class="header test_header"></header>
+
+    <!-- Test Form -->
+    <div
+      class="container text-center mt-5 pt-5 pb-5 border border-2 border-black"
+    >
+      <h1>Personality Test</h1>
+      <p class="lead">
+        For each statement, select the response that best represents your
+        opinion.
+      </p>
+      <p>
+        SD = Strongly Disagree | D = Disagree | N = Neutral | A = Agree | SA =
+        Strongly Agree
+      </p>
+      <br />
+      <div class="questions">
+        <!-- Question 1 -->
+        <h4 class="question">I am a worrior.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q1"
+            id="SD_radio_q1"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q1">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q1"
+            id="D_radio_q1"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q1">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q1"
+            id="N_radio_q1"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q1">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q1"
+            id="A_radio_q1"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q1">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q1"
+            id="SA_radio_q1"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q1">SA</label>
+        </div>
+        <!-- Question 2 -->
+        <h4 class="question">I like to have a lot of people around me.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q2"
+            id="SD_radio_q2"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q2">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q2"
+            id="D_radio_q2"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q2">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q2"
+            id="N_radio_q2"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q2">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q2"
+            id="A_radio_q2"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q2">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q2"
+            id="SA_radio_q2"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q2">SA</label>
+        </div>
+        <!-- Question 3 -->
+        <h4 class="question">I don't like to waste my time daydreaming.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q3"
+            id="SD_radio_q3"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q3">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q3"
+            id="D_radio_q3"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q3">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q3"
+            id="N_radio_q3"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q3">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q3"
+            id="A_radio_q3"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q3">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q3"
+            id="SA_radio_q3"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q3">SA</label>
+        </div>
+        <!-- Question 4 -->
+        <h4 class="question">I try to be courteous to everyone I meet.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q4"
+            id="SD_radio_q4"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q4">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q4"
+            id="D_radio_q4"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q4">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q4"
+            id="N_radio_q4"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q4">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q4"
+            id="A_radio_q4"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q4">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q4"
+            id="SA_radio_q4"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q4">SA</label>
+        </div>
+        <!-- Question 5 -->
+        <h4 class="question">I keep my belongings clean and neat.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q5"
+            id="SD_radio_q5"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q5">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q5"
+            id="D_radio_q5"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q5">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q5"
+            id="N_radio_q5"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q5">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q5"
+            id="A_radio_q5"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q5">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q5"
+            id="SA_radio_q5"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q5">SA</label>
+        </div>
+        <!-- Question 6 -->
+        <h4 class="question">I often feel inferior to others.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q6"
+            id="SD_radio_q6"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q6">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q6"
+            id="D_radio_q6"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q6">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q6"
+            id="N_radio_q6"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q6">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q6"
+            id="A_radio_q6"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q6">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q6"
+            id="SA_radio_q6"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q6">SA</label>
+        </div>
+        <!-- Question 7 -->
+        <h4 class="question">I laugh easily.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q7"
+            id="SD_radio_q7"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q7">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q7"
+            id="D_radio_q7"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q7">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q7"
+            id="N_radio_q7"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q7">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q7"
+            id="A_radio_q7"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q7">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q7"
+            id="SA_radio_q7"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q7">SA</label>
+        </div>
+        <!-- Question 8 -->
+        <h4 class="question">
+          Once I find the right way to do something, I stick to it.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q8"
+            id="SD_radio_q8"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q8">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q8"
+            id="D_radio_q8"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q8">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q8"
+            id="N_radio_q8"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q8">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q8"
+            id="A_radio_q8"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q8">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q8"
+            id="SA_radio_q8"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q8">SA</label>
+        </div>
+        <!-- Question 9 -->
+        <h4 class="question">
+          I often get into arguments with my family and co-workers.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q9"
+            id="SD_radio_q9"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q9">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q9"
+            id="D_radio_q9"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q9">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q9"
+            id="N_radio_q9"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q9">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q9"
+            id="A_radio_q9"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q9">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q9"
+            id="SA_radio_q9"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q9">SA</label>
+        </div>
+        <!-- Question 10 -->
+        <h4 class="question">
+          I'm pretty good about pacing myself to get things done on time.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q10"
+            id="SD_radio_q10"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q10">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q10"
+            id="D_radio_q10"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q10">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q10"
+            id="N_radio_q10"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q10">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q10"
+            id="A_radio_q10"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q10">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q10"
+            id="SA_radio_q10"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q10">SA</label>
+        </div>
+        <!-- Question 11 -->
+        <h4 class="question">
+          When I'm under a great deal of stress, sometimes I feel I'm going to
+          pieces.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q11"
+            id="SD_radio_q11"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q11">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q11"
+            id="D_radio_q11"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q11">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q11"
+            id="N_radio_q11"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q11">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q11"
+            id="A_radio_q11"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q11">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q11"
+            id="SA_radio_q11"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q11">SA</label>
+        </div>
+        <!-- Question 12 -->
+        <h4 class="question">
+          I don't consider myself especially "light-hearted."
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q12"
+            id="SD_radio_q12"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q12">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q12"
+            id="D_radio_q12"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q12">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q12"
+            id="N_radio_q12"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q12">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q12"
+            id="A_radio_q12"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q12">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q12"
+            id="SA_radio_q12"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q12">SA</label>
+        </div>
+        <!-- Question 13 -->
+        <h4 class="question">
+          I am intrigued by the patterns I find in art and nature.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q13"
+            id="SD_radio_q13"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q13">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q13"
+            id="D_radio_q13"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q13">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q13"
+            id="N_radio_q13"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q13">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q13"
+            id="A_radio_q13"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q13">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q13"
+            id="SA_radio_q13"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q13">SA</label>
+        </div>
+        <!-- Question 14 -->
+        <h4 class="question">Some people think I'm selfish and egotistical.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q14"
+            id="SD_radio_q14"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q14">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q14"
+            id="D_radio_q14"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q14">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q14"
+            id="N_radio_q14"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q14">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q14"
+            id="A_radio_q14"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q14">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q14"
+            id="SA_radio_q14"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q14">SA</label>
+        </div>
+        <!-- Question 15 -->
+        <h4 class="question">I am not a very methodical person.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q15"
+            id="SD_radio_q15"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q15">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q15"
+            id="D_radio_q15"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q15">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q15"
+            id="N_radio_q15"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q15">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q15"
+            id="A_radio_q15"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q15">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q15"
+            id="SA_radio_q15"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q15">SA</label>
+        </div>
+        <!-- Question 16 -->
+        <h4 class="question">I I rarely feel lonely or blue.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q16"
+            id="SD_radio_q16"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q16">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q16"
+            id="D_radio_q16"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q16">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q16"
+            id="N_radio_q16"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q16">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q16"
+            id="A_radio_q16"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q16">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q16"
+            id="SA_radio_q16"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q16">SA</label>
+        </div>
+        <!-- Question 17 -->
+        <h4 class="question">I really enjoy talking to people.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q17"
+            id="SD_radio_q17"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q17">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q17"
+            id="D_radio_q17"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q17">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q17"
+            id="N_radio_q17"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q17">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q17"
+            id="A_radio_q17"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q17">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q17"
+            id="SA_radio_q17"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q17">SA</label>
+        </div>
+        <!-- Question 18 -->
+        <h4 class="question">
+          I believe letting students hear controversial speakers can only
+          confuse and mislead them.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q18"
+            id="SD_radio_q18"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q18">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q18"
+            id="D_radio_q18"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q18">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q18"
+            id="N_radio_q18"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q18">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q18"
+            id="A_radio_q18"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q18">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q18"
+            id="SA_radio_q18"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q18">SA</label>
+        </div>
+        <!-- Question 19 -->
+        <h4 class="question">
+          I would rather cooperate with others than compete with them.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q19"
+            id="SD_radio_q19"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q19">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q19"
+            id="D_radio_q19"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q19">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q19"
+            id="N_radio_q19"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q19">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q19"
+            id="A_radio_q19"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q19">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q19"
+            id="SA_radio_q19"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q19">SA</label>
+        </div>
+        <!-- Question 20 -->
+        <h4 class="question">
+          I try to perform all the tasks assigned to me conscientiously.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q20"
+            id="SD_radio_q20"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q20">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q20"
+            id="D_radio_q20"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q20">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q20"
+            id="N_radio_q20"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q20">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q20"
+            id="A_radio_q20"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q20">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q20"
+            id="SA_radio_q20"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q20">SA</label>
+        </div>
+        <!-- Question 21 -->
+        <h4 class="question">I often feel tense and jittery.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q21"
+            id="SD_radio_q21"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q21">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q21"
+            id="D_radio_q21"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q21">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q21"
+            id="N_radio_q21"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q21">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q21"
+            id="A_radio_q21"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q21">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q21"
+            id="SA_radio_q21"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q21">SA</label>
+        </div>
+        <!-- Question 22 -->
+        <h4 class="question">I like to be where the action is.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q22"
+            id="SD_radio_q22"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q22">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q22"
+            id="D_radio_q22"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q22">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q22"
+            id="N_radio_q22"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q22">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q22"
+            id="A_radio_q22"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q22">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q22"
+            id="SA_radio_q22"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q22">SA</label>
+        </div>
+        <!-- Question 23 -->
+        <h4 class="question">Poetry has little or no effect on me.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q23"
+            id="SD_radio_q23"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q23">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q23"
+            id="D_radio_q23"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q23">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q23"
+            id="N_radio_q23"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q23">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q23"
+            id="A_radio_q23"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q23">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q23"
+            id="SA_radio_q23"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q23">SA</label>
+        </div>
+        <!-- Question 24 -->
+        <h4 class="question">
+          I tend to be synical and skeptical of others' intentions.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q24"
+            id="SD_radio_q24"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q24">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q24"
+            id="D_radio_q24"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q24">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q24"
+            id="N_radio_q24"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q24">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q24"
+            id="A_radio_q24"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q24">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q24"
+            id="SA_radio_q24"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q24">SA</label>
+        </div>
+        <!-- Question 25 -->
+        <h4 class="question">
+          I have a clear set of goals and work toward them in an orderly
+          fashion.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q25"
+            id="SD_radio_q25"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q25">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q25"
+            id="D_radio_q25"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q25">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q25"
+            id="N_radio_q25"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q25">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q25"
+            id="A_radio_q25"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q25">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q25"
+            id="SA_radio_q25"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q25">SA</label>
+        </div>
+        <!-- Question 26 -->
+        <h4 class="question">Sometimes I feel completely worthless.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q26"
+            id="SD_radio_q26"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q26">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q26"
+            id="D_radio_q26"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q26">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q26"
+            id="N_radio_q26"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q26">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q26"
+            id="A_radio_q26"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q26">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q26"
+            id="SA_radio_q26"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q26">SA</label>
+        </div>
+        <!-- Question 27 -->
+        <h4 class="question">I usually prefer to do things alone.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q27"
+            id="SD_radio_q27"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q27">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q27"
+            id="D_radio_q27"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q27">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q27"
+            id="N_radio_q27"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q27">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q27"
+            id="A_radio_q27"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q27">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q27"
+            id="SA_radio_q27"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q27">SA</label>
+        </div>
+        <!-- Question 28 -->
+        <h4 class="question">I often try new and foreign foods.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q28"
+            id="SD_radio_q28"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q28">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q28"
+            id="D_radio_q28"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q28">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q28"
+            id="N_radio_q28"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q28">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q28"
+            id="A_radio_q28"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q28">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q28"
+            id="SA_radio_q28"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q28">SA</label>
+        </div>
+        <!-- Question 29 -->
+        <h4 class="question">
+          I believe that most people will take advantage of you if you let them.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q29"
+            id="SD_radio_q29"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q29">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q29"
+            id="D_radio_q29"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q29">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q29"
+            id="N_radio_q29"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q29">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q29"
+            id="A_radio_q29"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q29">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q29"
+            id="SA_radio_q29"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q29">SA</label>
+        </div>
+        <!-- Question 30 -->
+        <h4 class="question">
+          I waste a lot of time before settling down to work.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q30"
+            id="SD_radio_q30"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q30">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q30"
+            id="D_radio_q30"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q30">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q30"
+            id="N_radio_q30"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q30">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q30"
+            id="A_radio_q30"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q30">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q30"
+            id="SA_radio_q30"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q30">SA</label>
+        </div>
+        <!-- Question 31 -->
+        <h4 class="question">I rarely feel fearful or anxious.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q31"
+            id="SD_radio_q31"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q31">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q31"
+            id="D_radio_q31"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q31">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q31"
+            id="N_radio_q31"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q31">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q31"
+            id="A_radio_q31"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q31">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q31"
+            id="SA_radio_q31"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q31">SA</label>
+        </div>
+        <!-- Question 32 -->
+        <h4 class="question">I often feel as if I'm bursting with energy.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q32"
+            id="SD_radio_q32"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q32">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q32"
+            id="D_radio_q32"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q32">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q32"
+            id="N_radio_q32"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q32">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q32"
+            id="A_radio_q32"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q32">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q32"
+            id="SA_radio_q32"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q32">SA</label>
+        </div>
+        <!-- Question 33 -->
+        <h4 class="question">
+          I seldom notice the moods or feelings that different environments
+          produce.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q33"
+            id="SD_radio_q33"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q33">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q33"
+            id="D_radio_q33"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q33">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q33"
+            id="N_radio_q33"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q33">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q33"
+            id="A_radio_q33"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q33">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q33"
+            id="SA_radio_q33"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q33">SA</label>
+        </div>
+        <!-- Question 34 -->
+        <h4 class="question">Most people I know like me.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q34"
+            id="SD_radio_q34"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q34">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q34"
+            id="D_radio_q34"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q34">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q34"
+            id="N_radio_q34"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q34">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q34"
+            id="A_radio_q34"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q34">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q34"
+            id="SA_radio_q34"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q34">SA</label>
+        </div>
+        <!-- Question 35 -->
+        <h4 class="question">I work hard to accomplish my goals.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q35"
+            id="SD_radio_q35"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q35">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q35"
+            id="D_radio_q35"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q35">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q35"
+            id="N_radio_q35"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q35">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q35"
+            id="A_radio_q35"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q35">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q35"
+            id="SA_radio_q35"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q35">SA</label>
+        </div>
+        <!-- Question 36 -->
+        <h4 class="question">I often get angry at the way people treat me.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q36"
+            id="SD_radio_q36"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q36">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q36"
+            id="D_radio_q36"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q36">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q36"
+            id="N_radio_q36"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q36">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q36"
+            id="A_radio_q36"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q36">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q36"
+            id="SA_radio_q36"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q36">SA</label>
+        </div>
+        <!-- Question 37 -->
+        <h4 class="question">I am a cheerful, high-spirited person.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q37"
+            id="SD_radio_q37"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q37">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q37"
+            id="D_radio_q37"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q37">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q37"
+            id="N_radio_q37"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q37">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q37"
+            id="A_radio_q37"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q37">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q37"
+            id="SA_radio_q37"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q37">SA</label>
+        </div>
+        <!-- Question 38 -->
+        <h4 class="question">
+          I believe we should look to out religious authorites for decisions on
+          moral issues.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q38"
+            id="SD_radio_q38"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q38">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q38"
+            id="D_radio_q38"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q38">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q38"
+            id="N_radio_q38"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q38">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q38"
+            id="A_radio_q38"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q38">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q38"
+            id="SA_radio_q38"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q38">SA</label>
+        </div>
+        <!-- Question 39 -->
+        <h4 class="question">
+          Some people think of me as cold and calculating.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q39"
+            id="SD_radio_q39"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q39">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q39"
+            id="D_radio_q39"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q39">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q39"
+            id="N_radio_q39"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q39">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q39"
+            id="A_radio_q39"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q39">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q39"
+            id="SA_radio_q39"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q39">SA</label>
+        </div>
+        <!-- Question 40 -->
+        <h4 class="question">
+          When I make a commitment, I can always be counted on to follow
+          through.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q40"
+            id="SD_radio_q40"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q40">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q40"
+            id="D_radio_q40"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q40">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q40"
+            id="N_radio_q40"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q40">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q40"
+            id="A_radio_q40"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q40">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q40"
+            id="SA_radio_q40"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q40">SA</label>
+        </div>
+        <!-- Question 41 -->
+        <h4 class="question">
+          Too often, when things go wrong, I get discouraged and feel like
+          giving up.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q41"
+            id="SD_radio_q41"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q41">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q41"
+            id="D_radio_q41"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q41">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q41"
+            id="N_radio_q41"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q41">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q41"
+            id="A_radio_q41"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q41">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q41"
+            id="SA_radio_q41"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q41">SA</label>
+        </div>
+        <!-- Question 42 -->
+        <h4 class="question">I am not a cheerful optimist.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q42"
+            id="SD_radio_q42"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q42">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q42"
+            id="D_radio_q42"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q42">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q42"
+            id="N_radio_q42"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q42">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q42"
+            id="A_radio_q42"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q42">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q42"
+            id="SA_radio_q42"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q42">SA</label>
+        </div>
+        <!-- Question 43 -->
+        <h4 class="question">
+          Sometimes when I am reading poetry or looking at work of art, I feel a
+          chill or wave of excitement.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q43"
+            id="SD_radio_q43"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q43">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q43"
+            id="D_radio_q43"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q43">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q43"
+            id="N_radio_q43"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q43">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q43"
+            id="A_radio_q43"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q43">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q43"
+            id="SA_radio_q43"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q43">SA</label>
+        </div>
+        <!-- Question 44 -->
+        <h4 class="question">
+          I'm hard-headed and tough-minded in my attitudes.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q44"
+            id="SD_radio_q44"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q44">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q44"
+            id="D_radio_q44"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q44">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q44"
+            id="N_radio_q44"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q44">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q44"
+            id="A_radio_q44"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q44">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q44"
+            id="SA_radio_q44"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q44">SA</label>
+        </div>
+        <!-- Question 45 -->
+        <h4 class="question">
+          Sometimes I'm not as dependable or reliable as I should be.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q45"
+            id="SD_radio_q45"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q45">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q45"
+            id="D_radio_q45"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q45">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q45"
+            id="N_radio_q45"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q45">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q45"
+            id="A_radio_q45"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q45">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q45"
+            id="SA_radio_q45"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q45">SA</label>
+        </div>
+        <!-- Question 46 -->
+        <h4 class="question">I am seldom sad or depressed.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q46"
+            id="SD_radio_q46"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q46">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q46"
+            id="D_radio_q46"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q46">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q46"
+            id="N_radio_q46"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q46">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q46"
+            id="A_radio_q46"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q46">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q46"
+            id="SA_radio_q46"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q46">SA</label>
+        </div>
+        <!-- Question 47 -->
+        <h4 class="question">My life is fast-paced.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q47"
+            id="SD_radio_q47"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q47">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q47"
+            id="D_radio_q47"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q47">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q47"
+            id="N_radio_q47"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q47">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q47"
+            id="A_radio_q47"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q47">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q47"
+            id="SA_radio_q47"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q47">SA</label>
+        </div>
+        <!-- Question 48 -->
+        <h4 class="question">
+          I have little interest in speculating on the nature of the universe or
+          the human condition.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q48"
+            id="SD_radio_q48"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q48">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q48"
+            id="D_radio_q48"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q48">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q48"
+            id="N_radio_q48"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q48">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q48"
+            id="A_radio_q48"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q48">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q48"
+            id="SA_radio_q48"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q48">SA</label>
+        </div>
+        <!-- Question 49 -->
+        <h4 class="question">
+          I generally try to be thoughtful and considerate.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q49"
+            id="SD_radio_q49"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q49">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q49"
+            id="D_radio_q49"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q49">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q49"
+            id="N_radio_q49"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q49">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q49"
+            id="A_radio_q49"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q49">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q49"
+            id="SA_radio_q49"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q49">SA</label>
+        </div>
+        <!-- Question 50 -->
+        <h4 class="question">
+          I am a productive person who always gets the job done.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q50"
+            id="SD_radio_q50"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q50">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q50"
+            id="D_radio_q50"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q50">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q50"
+            id="N_radio_q50"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q50">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q50"
+            id="A_radio_q50"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q50">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q50"
+            id="SA_radio_q50"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q50">SA</label>
+        </div>
+        <!-- Question 51 -->
+        <h4 class="question">
+          I often feel helpless and want someone else to solve my problems.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q51"
+            id="SD_radio_q51"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q51">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q51"
+            id="D_radio_q51"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q51">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q51"
+            id="N_radio_q51"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q51">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q51"
+            id="A_radio_q51"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q51">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q51"
+            id="SA_radio_q51"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q51">SA</label>
+        </div>
+        <!-- Question 52 -->
+        <h4 class="question">I am a very active person.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q52"
+            id="SD_radio_q52"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q52">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q52"
+            id="D_radio_q52"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q52">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q52"
+            id="N_radio_q52"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q52">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q52"
+            id="A_radio_q52"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q52">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q52"
+            id="SA_radio_q52"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q52">SA</label>
+        </div>
+        <!-- Question 53 -->
+        <h4 class="question">I have a lot of intellectual curiosity.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q53"
+            id="SD_radio_q53"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q53">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q53"
+            id="D_radio_q53"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q53">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q53"
+            id="N_radio_q53"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q53">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q53"
+            id="A_radio_q53"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q53">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q53"
+            id="SA_radio_q53"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q53">SA</label>
+        </div>
+        <!-- Question 54 -->
+        <h4 class="question">If I don't like people, I let them know it.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q54"
+            id="SD_radio_q54"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q54">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q54"
+            id="D_radio_q54"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q54">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q54"
+            id="N_radio_q54"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q54">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q54"
+            id="A_radio_q54"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q54">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q54"
+            id="SA_radio_q54"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q54">SA</label>
+        </div>
+        <!-- Question 55 -->
+        <h4 class="question">I never seen to be able to get organized.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q55"
+            id="SD_radio_q55"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q55">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q55"
+            id="D_radio_q55"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q55">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q55"
+            id="N_radio_q55"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q55">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q55"
+            id="A_radio_q55"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q55">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q55"
+            id="SA_radio_q55"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q55">SA</label>
+        </div>
+        <!-- Question 56 -->
+        <h4 class="question">
+          At times I have been so ashamed I just wanted to hide.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q56"
+            id="SD_radio_q56"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q56">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q56"
+            id="D_radio_q56"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q56">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q56"
+            id="N_radio_q56"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q56">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q56"
+            id="A_radio_q56"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q56">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q56"
+            id="SA_radio_q56"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q56">SA</label>
+        </div>
+        <!-- Question 57 -->
+        <h4 class="question">
+          I would rather go my own way than be a leader of others.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q57"
+            id="SD_radio_q57"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q57">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q57"
+            id="D_radio_q57"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q57">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q57"
+            id="N_radio_q57"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q57">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q57"
+            id="A_radio_q57"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q57">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q57"
+            id="SA_radio_q57"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q57">SA</label>
+        </div>
+        <!-- Question 58 -->
+        <h4 class="question">
+          I often enjoy playing with theories or abstract ideas.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q58"
+            id="SD_radio_q58"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q58">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q58"
+            id="D_radio_q58"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q58">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q58"
+            id="N_radio_q58"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q58">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q58"
+            id="A_radio_q58"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q58">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q58"
+            id="SA_radio_q58"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q58">SA</label>
+        </div>
+        <!-- Question 59 -->
+        <h4 class="question">
+          If necessary, I am willing to manipulate people to get what I want.
+        </h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q59"
+            id="SD_radio_q59"
+            value="4"
+          />
+          <label class="form-check-label" for="SD_radio_q59">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q59"
+            id="D_radio_q59"
+            value="3"
+          />
+          <label class="form-check-label" for="D_radio_q59">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q59"
+            id="N_radio_q59"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q59">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q59"
+            id="A_radio_q59"
+            value="1"
+          />
+          <label class="form-check-label" for="A_radio_q59">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q59"
+            id="SA_radio_q59"
+            value="0"
+          />
+          <label class="form-check-label" for="SA_radio_q59">SA</label>
+        </div>
+        <!-- Question 60 -->
+        <h4 class="question">I arrive for excellence in everything I do.</h4>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q60"
+            id="SD_radio_q60"
+            value="0"
+          />
+          <label class="form-check-label" for="SD_radio_q60">SD</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q60"
+            id="D_radio_q60"
+            value="1"
+          />
+          <label class="form-check-label" for="D_radio_q60">D</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q60"
+            id="N_radio_q60"
+            value="2"
+          />
+          <label class="form-check-label" for="N_radio_q60">N</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q60"
+            id="A_radio_q60"
+            value="3"
+          />
+          <label class="form-check-label" for="A_radio_q60">A</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="q60"
+            id="SA_radio_q60"
+            value="4"
+          />
+          <label class="form-check-label" for="SA_radio_q60">SA</label>
         </div>
       </div>
-    </header>
+      <a
+          href="#result"
+          id="submit_button"
+          class="btn btn-lg"
+          role="button"
+          style="background-color: rgb(66, 133, 117); color: whitesmoke; margin-top: 30px;" 
+          onclick="display_result()"
+          >Submit</a>
+    </div>
+    
+    <!-- Result Page -->
+    <div id="result" class="container text-center mt-5 pt-5 pb-5 border border-2 border-black">
+      <h1>Result</h1>
+      <div class="row m-3 justify-content-center">
+        <div class="col-sm-12 col-md-2"><p id="n">N = </p></div>
+        <div class="col-sm-12 col-md-2"><p id="e">E = </p></div>
+        <div class="col-sm-12 col-md-2"><p id="o">O = </p></div>
+        <div class="col-sm-12 col-md-2"><p id="a">A = </p></div>
+        <div class="col-sm-12 col-md-2"><p id="c">C = </p></div>
+      </div>
+      <!-- Add the Line Graph -->
+      <div class="row">
+        <div class="col">
+          <canvas id="scoreChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer bg-light" data-bs-theme="light" style="height: 50px">
@@ -117,5 +3338,242 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript">
+      let n_score, e_score, o_score, a_score, c_score;
+
+      function calc_score() {
+        const q1 = parseInt(
+          document.querySelector("input[name=q1]:checked").value
+        );
+        const q2 = parseInt(
+          document.querySelector("input[name=q2]:checked").value
+        );
+        const q3 = parseInt(
+          document.querySelector("input[name=q3]:checked").value
+        );
+        const q4 = parseInt(
+          document.querySelector("input[name=q4]:checked").value
+        );
+        const q5 = parseInt(
+          document.querySelector("input[name=q5]:checked").value
+        );
+        const q6 = parseInt(
+          document.querySelector("input[name=q6]:checked").value
+        );
+        const q7 = parseInt(
+          document.querySelector("input[name=q7]:checked").value
+        );
+        const q8 = parseInt(
+          document.querySelector("input[name=q8]:checked").value
+        );
+        const q9 = parseInt(
+          document.querySelector("input[name=q9]:checked").value
+        );
+        const q10 = parseInt(
+          document.querySelector("input[name=q10]:checked").value
+        );
+        const q11 = parseInt(
+          document.querySelector("input[name=q11]:checked").value
+        );
+        const q12 = parseInt(
+          document.querySelector("input[name=q12]:checked").value
+        );
+        const q13 = parseInt(
+          document.querySelector("input[name=q13]:checked").value
+        );
+        const q14 = parseInt(
+          document.querySelector("input[name=q14]:checked").value
+        );
+        const q15 = parseInt(
+          document.querySelector("input[name=q15]:checked").value
+        );
+        const q16 = parseInt(
+          document.querySelector("input[name=q16]:checked").value
+        );
+        const q17 = parseInt(
+          document.querySelector("input[name=q17]:checked").value
+        );
+        const q18 = parseInt(
+          document.querySelector("input[name=q18]:checked").value
+        );
+        const q19 = parseInt(
+          document.querySelector("input[name=q19]:checked").value
+        );
+        const q20 = parseInt(
+          document.querySelector("input[name=q20]:checked").value
+        );
+        const q21 = parseInt(
+          document.querySelector("input[name=q21]:checked").value
+        );
+        const q22 = parseInt(
+          document.querySelector("input[name=q22]:checked").value
+        );
+        const q23 = parseInt(
+          document.querySelector("input[name=q23]:checked").value
+        );
+        const q24 = parseInt(
+          document.querySelector("input[name=q24]:checked").value
+        );
+        const q25 = parseInt(
+          document.querySelector("input[name=q25]:checked").value
+        );
+        const q26 = parseInt(
+          document.querySelector("input[name=q26]:checked").value
+        );
+        const q27 = parseInt(
+          document.querySelector("input[name=q27]:checked").value
+        );
+        const q28 = parseInt(
+          document.querySelector("input[name=q28]:checked").value
+        );
+        const q29 = parseInt(
+          document.querySelector("input[name=q29]:checked").value
+        );
+        const q30 = parseInt(
+          document.querySelector("input[name=q30]:checked").value
+        );
+        const q31 = parseInt(
+          document.querySelector("input[name=q31]:checked").value
+        );
+        const q32 = parseInt(
+          document.querySelector("input[name=q32]:checked").value
+        );
+        const q33 = parseInt(
+          document.querySelector("input[name=q33]:checked").value
+        );
+        const q34 = parseInt(
+          document.querySelector("input[name=q34]:checked").value
+        );
+        const q35 = parseInt(
+          document.querySelector("input[name=q35]:checked").value
+        );
+        const q36 = parseInt(
+          document.querySelector("input[name=q36]:checked").value
+        );
+        const q37 = parseInt(
+          document.querySelector("input[name=q37]:checked").value
+        );
+        const q38 = parseInt(
+          document.querySelector("input[name=q38]:checked").value
+        );
+        const q39 = parseInt(
+          document.querySelector("input[name=q39]:checked").value
+        );
+        const q40 = parseInt(
+          document.querySelector("input[name=q40]:checked").value
+        );
+        const q41 = parseInt(
+          document.querySelector("input[name=q41]:checked").value
+        );
+        const q42 = parseInt(
+          document.querySelector("input[name=q42]:checked").value
+        );
+        const q43 = parseInt(
+          document.querySelector("input[name=q43]:checked").value
+        );
+        const q44 = parseInt(
+          document.querySelector("input[name=q44]:checked").value
+        );
+        const q45 = parseInt(
+          document.querySelector("input[name=q45]:checked").value
+        );
+        const q46 = parseInt(
+          document.querySelector("input[name=q46]:checked").value
+        );
+        const q47 = parseInt(
+          document.querySelector("input[name=q47]:checked").value
+        );
+        const q48 = parseInt(
+          document.querySelector("input[name=q48]:checked").value
+        );
+        const q49 = parseInt(
+          document.querySelector("input[name=q49]:checked").value
+        );
+        const q50 = parseInt(
+          document.querySelector("input[name=q50]:checked").value
+        );
+        const q51 = parseInt(
+          document.querySelector("input[name=q51]:checked").value
+        );
+        const q52 = parseInt(
+          document.querySelector("input[name=q52]:checked").value
+        );
+        const q53 = parseInt(
+          document.querySelector("input[name=q53]:checked").value
+        );
+        const q54 = parseInt(
+          document.querySelector("input[name=q54]:checked").value
+        );
+        const q55 = parseInt(
+          document.querySelector("input[name=q55]:checked").value
+        );
+        const q56 = parseInt(
+          document.querySelector("input[name=q56]:checked").value
+        );
+        const q57 = parseInt(
+          document.querySelector("input[name=q57]:checked").value
+        );
+        const q58 = parseInt(
+          document.querySelector("input[name=q58]:checked").value
+        );
+        const q59 = parseInt(
+          document.querySelector("input[name=q59]:checked").value
+        );
+        const q60 = parseInt(
+          document.querySelector("input[name=q60]:checked").value
+        );
+
+        n_score = q1 + q6 + q11 + q16 + q21 + q26 + q31 + q36 + q41 + q46 + q51 + q56;
+        e_score = q2 + q7 + q12 + q17 + q22 + q27 + q32 + q37 + q42 + q47 + q52 + q57;
+        o_score = q3 + q8 + q13 + q18 + q23 + q28 + q33 + q38 + q43 + q48 + q53 + q58;
+        a_score = q4 + q9 + q14 + q19 + q24 + q29 + q34 + q39 + q44 + q49 + q54 + q59;
+        c_score = q5 + q10 + q15 + q20 + q25 + q30 + q35 + q40 + q45 + q50 + q55 + q60;
+
+        console.log("N = " + n_score);
+        console.log("E = " + e_score);
+        console.log("O = " + o_score);
+        console.log("A = " + a_score);
+        console.log("C = " + c_score);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("submit_button").addEventListener("click", display_result);
+      });
+
+      function display_result() {
+        calc_score()
+        document.getElementById("result").style.display = "block"
+        document.getElementById("n").innerHTML = "N = " + n_score
+        document.getElementById("e").innerHTML = "E = " + e_score
+        document.getElementById("o").innerHTML = "O = " + o_score
+        document.getElementById("a").innerHTML = "A = " + a_score
+        document.getElementById("c").innerHTML = "C = " + c_score
+
+        // Create a line chart
+        const ctx = document.getElementById("scoreChart").getContext("2d");
+        const scoreChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: ["N", "E", "O", "A", "C"],
+            datasets: [{
+              label: "Scores",
+              data: [n_score, e_score, o_score, a_score, c_score],
+              backgroundColor: "rgba(54, 162, 235, 0.2)",
+              borderColor: "rgba(54, 162, 235, 1)",
+              borderWidth: 1.5
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>

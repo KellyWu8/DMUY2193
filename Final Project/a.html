@@ -12,24 +12,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <title>Final Project</title>
+    <title>5Traits</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-0 m-0 border-0">
     <!-- Navbar -->
     <div
-      class="navbar navbar-expand-lg bg-light fixed-top"
+      class="navbar navbar-expand-lg bg-light fixed-top py-3"
       data-bs-theme="light"
-      style="height: 70px"
     >
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand" style="font-weight: 500"
+        <a
+          href="index.html"
+          class="navbar-brand"
+          style="font-weight: 500; padding-left: 24px"
           >5Traits</a
         >
         <button
@@ -82,8 +78,8 @@
                 Resources
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Articles</a></li>
-                <li><a class="dropdown-item" href="#">Research</a></li>
+                <li><a class="dropdown-item" href="articles.html">Articles</a></li>
+                <li><a class="dropdown-item" href="research.html">Research</a></li>
               </ul>
             </li>
           </ul>
@@ -91,44 +87,76 @@
       </div>
     </div>
 
-    <!-- C Header -->
-    <header class="test_header"></header>
+    <!-- Header -->
+    <header class="header a_header"></header>
 
-    <!-- Conscientiousness Info -->
-    <div class="container pt-5 traits">
-      <h1 style="padding-bottom: 10px">Conscientiousness</h1>
-      <p>
-        Among each of the personality traits, conscientiousness is one defined
-        by high levels of thoughtfulness, good impulse control, and
-        goal-directed behaviors. Highly conscientious people tend to be
-        organized and mindful of details. They plan ahead, think about how their
-        behavior affects others, and are mindful of deadlines.
-      </p>
-      <p>
-        Someone scoring lower in this primary personality trait is less
-        structured and less organized. They may procrastinate to get things
-        done, sometimes missing deadlines completely.
-      </p>
-    </div>
-    <div class="container pt-5 traits">
-      <h1>High Score</h1>
-      <ul>
-        <li>Spends time preparing</li>
-        <li>Finishes important tasks right away</li>
-        <li>Pays attention to detail</li>
-        <li>Enjoys having a set schedule</li>
-      </ul>
-    </div>
-
-    <div class="container pt-5 traits">
-      <h1>Low Score</h1>
-      <ul>
-        <li>Dislikes structure and schedules</li>
-        <li>Makes messes and doesn't take care of things</li>
-        <li>Fails to return things or put them back where they belong</li>
-        <li>Procrastinates important tasks</li>
-        <li>Fails to complete necessary or assigned tasks</li>
-      </ul>
+    <!-- Info -->
+    <div class="container mt-5 mb-5 info">
+      <div class="row gx-5">
+        <!-- Content Column -->
+        <div class="col-lg-8">
+          <h2>Agreeableness</h2>
+          <p>
+            People who exhibit high agreeableness will show signs of trust,
+            altruism, kindness, and affection. Highly agreeable people tend to have
+            high prosocial behaviours which means that they're more inclined to be
+            helping other people.
+          </p>
+          <p>
+            Sharing, comforting and cooperating are traits that lend themselves to
+            highly agreeable personality types. Empathy towards others is commonly
+            understood as another form of agreeableness even if the term doesn't
+            quite fit.
+          </p>
+          <p>
+            The opposite to agreeableness is disagreeableness but it manifests in
+            behaviour traits that are socially unpleasant. Manipulation and
+            nastiness towards others, a lack of caring or sympathy, a lack of taking
+            interest in others and their problems are all quite common.
+          </p>
+          <p>
+            Agreeable people tend to find careers in areas where they can help the
+            most. Charity workers, medicine, mental health and even those who
+            volunteer in soup kitchens and dedicate time to the third sector (social
+            studies) are high in the agreeableness chart.
+          </p>
+        </div>
+        <!-- Image Column -->
+        <div class="col-lg-4">
+          <img src="images/traits/characters/a_character.png" alt="agreeableness character" class="img-fluid" style="width: 400px; height: 400px"/>
+        </div>
+      </div>
+      <div class="row">
+        <!-- High/Low Score Section -->
+        <div class="container mt-5 info">
+          <div class="row high_low_row">
+            <div class="col-lg-4 border border-2 border-black p-3">
+              <!-- High Score Content -->
+              <h2>High Score (37-48)</h2>
+              <ul>
+                <li>Has a great deal of interest in other people</li>
+                <li>Cares about others</li>
+                <li>Feels empathy and concern for other people</li>
+                <li>
+                  Enjoys helping and contributing to the happiness of other people
+                </li>
+                <li>Assists others who are in need of help</li>
+              </ul>
+            </div>
+            <div class="col-lg-4 border border-2 border-black p-3" style="border-left: 0;">
+              <!-- Low Score Content -->
+              <h2>Low Score (0-21)</h2>
+              <ul>
+                <li>Takes little interest in others</li>
+                <li>Doesn't care about how other people feel</li>
+                <li>Has little interest in other people's problems</li>
+                <li>Insults and belittles others</li>
+                <li>Manipulates others to get what they want</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->

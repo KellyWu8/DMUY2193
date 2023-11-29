@@ -1,39 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   font-family: "Poppins", Arial;
 }
-.home_header {
-  height: 100vh;
-  min-height: 500px;
-  background-image: url("images/header.jpg");
+
+body p {
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.about p {
+.home_header {
+  height: 100vh;
+  background-image: url("images/home_header.jpg");
+}
+
+.about p,
+.info p {
   padding-top: 20px;
   margin-bottom: 0px;
   font-weight: 400;
-  width: 900px;
 }
 
 .test_header {
   height: 50vh;
-  min-height: 250px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background: rgb(178, 234, 164);
-  color: black;
+  background-image: url("images/test_header.png");
 }
 
-.traits li {
-  padding: 8px;
+.form-check input {
+  background-color: rgb(232, 232, 232);
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.traits p {
-  padding-top: 20px;
-  margin-bottom: 0px;
-  font-weight: 400;
-  width: 800px;
+.form-check label {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 5px;
+  padding-left: 8px;
+}
+
+.o_header {
+  height: 50vh;
+  background-image: url("images/traits/headers/o_header.png");
+}
+
+.c_header {
+  height: 50vh;
+  background-image: url("images/traits/headers/c_header.png");
+}
+
+.e_header {
+  height: 50vh;
+  background-image: url("images/traits/headers/e_header.png");
+}
+
+.a_header {
+  height: 50vh;
+  background-image: url("images/traits/headers/a_header.png");
+}
+.n_header {
+  height: 50vh;
+  background-image: url("images/traits/headers/n_header.png");
+}
+
+.articles_header {
+  height: 50vh;
+  background-image: url("images/articles_header.png");
+}
+
+.research_header {
+  height: 50vh;
+  background-image: url("images/research_header.png");
+}
+
+
+.high_low_row li {
+  padding-top: 7px;
+  font-size: 18px;
+}
+
+li::marker {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.question {
+  margin-top: 30px;
+}
+
+#result {
+  display: none;
+}
+
+#result p {
+  font-size: 27px;
+  margin: 0px;
 }
