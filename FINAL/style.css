@@ -48,6 +48,11 @@ body p {
   padding-left: 8px;
 }
 
+.questions .form-check-input:checked {
+  background-color: rgb(53, 135, 149);
+  border-color: rgb(53, 135, 149);
+}
+
 .o_header {
   height: 50vh;
   background-image: url("images/traits/headers/o_header.png");

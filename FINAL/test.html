@@ -23,12 +23,13 @@
       data-bs-theme="light"
     >
       <div class="container-fluid">
-        <a
+       <a
           href="index.html"
           class="navbar-brand"
-          style="font-weight: 500; padding-left: 24px"
-          >5Traits</a
-        >
+          style="font-weight: 500; padding-left: 24px">
+          <img src="images/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          5Traits
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -2068,7 +2069,7 @@
         </div>
         <!-- Question 38 -->
         <h4 class="question">
-          I believe we should look to out religious authorites for decisions on
+          I believe we should look to our religious authorites for decisions on
           moral issues.
         </h4>
         <div class="form-check form-check-inline">
@@ -3529,12 +3530,6 @@
         o_score = q3 + q8 + q13 + q18 + q23 + q28 + q33 + q38 + q43 + q48 + q53 + q58;
         a_score = q4 + q9 + q14 + q19 + q24 + q29 + q34 + q39 + q44 + q49 + q54 + q59;
         c_score = q5 + q10 + q15 + q20 + q25 + q30 + q35 + q40 + q45 + q50 + q55 + q60;
-
-        console.log("N = " + n_score);
-        console.log("E = " + e_score);
-        console.log("O = " + o_score);
-        console.log("A = " + a_score);
-        console.log("C = " + c_score);
       }
 
       document.addEventListener("DOMContentLoaded", function () {
@@ -3566,14 +3561,14 @@
           },
           options: {
             scales: {
-              y: {
-                beginAtZero: true
+             y: {
+                beginAtZero: true,
+                max: 50
               }
             }
           }
         });
       }
     </script>
-
   </body>
 </html>
