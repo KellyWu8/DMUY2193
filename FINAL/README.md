@@ -40,16 +40,16 @@ function calc_score() {
     const q59 = parseInt(
           document.querySelector("input[name=q59]:checked").value
         );
-        const q60 = parseInt(
-          document.querySelector("input[name=q60]:checked").value
-        );
+    const q60 = parseInt(
+        document.querySelector("input[name=q60]:checked").value
+    );
 
     n_score = q1 + q6 + q11 + q16 + q21 + q26 + q31 + q36 + q41 + q46 + q51 + q56;
     e_score = q2 + q7 + q12 + q17 + q22 + q27 + q32 + q37 + q42 + q47 + q52 + q57;
     o_score = q3 + q8 + q13 + q18 + q23 + q28 + q33 + q38 + q43 + q48 + q53 + q58;
     a_score = q4 + q9 + q14 + q19 + q24 + q29 + q34 + q39 + q44 + q49 + q54 + q59;
     c_score = q5 + q10 + q15 + q20 + q25 + q30 + q35 + q40 + q45 + q50 + q55 + q60;
-      }
+}
 ```
 <sub>**Code Block 2**: Getting the user's answer choice for each question and adding the points to the respective personality trait score.</sub>
 
